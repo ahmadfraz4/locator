@@ -4,8 +4,8 @@ let express = require('express')
 let app = express()
 let {Data} = require('./models/data.model')
 let path = require('path')
-
 const fetch = require('node-fetch');
+
 let port = process.env.PORT || 3001;
 
 app.get('/',(req,res)=>{
