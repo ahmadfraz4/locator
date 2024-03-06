@@ -7,7 +7,7 @@ let path = require('path')
 const axios = require('axios');
 
 let port = process.env.PORT || 3001;
-
+app.set('trust proxy', true);
 app.get('/',(req,res)=>{
   // '67.250.186.196'
     const userIp = req.ip || req.connection.remoteAddress;
