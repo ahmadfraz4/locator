@@ -12,10 +12,10 @@ app.get('/',(req,res)=>{
   // '67.250.186.196'
     const userIp = req.ip || req.connection.remoteAddress;
     getIpInfo(userIp);
-   res.send('hi')
-    // app.use(express.static(path.join(__dirname, '../dist')));
+   
+    app.use(express.static(path.join(__dirname, '../dist')));
 
-    // res.sendFile(path.join(__dirname, '../dist/index.html'))
+    res.sendFile(path.join(__dirname, '../dist/index.html'))
 })
 
 
