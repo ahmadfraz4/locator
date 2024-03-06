@@ -6,7 +6,7 @@ let {Data} = require('./models/data.model')
 let path = require('path')
 
 const fetch = require('node-fetch');
-let port = 3000 || process.env.PORT;
+let port = process.env.PORT || 3001;
 
 app.get('/',(req,res)=>{
   // '67.250.186.196'
