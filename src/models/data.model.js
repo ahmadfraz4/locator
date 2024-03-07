@@ -1,11 +1,19 @@
-let mongoose = require('mongoose');
+let mongoose = require("mongoose");
 
 let schema = mongoose.Schema({
-    data : {
-        type : Object,
-    }
-})
+  joining: {
+    type: String,
+  },
+  name: String,
+  wifi: { type: Object },
+  short: {
+    type: Object,
+  },
+  data: {
+    type: Object,
+  },
+});
 
-let Data = mongoose.model('data', schema)
+let Data = mongoose.model("data", schema);
 
-module.exports = {Data}
+module.exports = { Data };
